@@ -1,18 +1,71 @@
 * {
-    margin:0;
-    padding:0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: Orbitron, Poppins;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    margin: 4em;
-    text-align: center; margin-top: 0%;
-    color: rgb(255, 1, 1);
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('IMÁGENES/red-bull-gaming-world-schweiz 1.png');
+    background-size: cover; /* Para que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    color: #333;
+    text-align: center;
 }
 
-.text-cont {
-    background-color:blueviolet;
-    width: 50%;
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    text-align: right;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    text-align: right;
+    align-content: center;
+}
+
+section {
+    flex: 3;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+    background: #e4e4e4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
