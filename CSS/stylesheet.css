@@ -58,9 +58,19 @@ aside {
     text-align: left; /* Alinea el texto a la izquierda */
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-}
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* altura de pie de página */
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* altura de pie de página */
+    color: aquamarine;
+  }
