@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url('IMÁGENES/red-bull-gaming-world-schweiz-1.png'); /* Asegúrate de que la ruta sea correcta */
+    background-image: url('images/redbull.png'); /* Asegúrate de que la ruta sea correcta */
     background-size: cover;
     background-position: center;
     color: #333;
