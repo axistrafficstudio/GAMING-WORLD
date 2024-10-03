@@ -12,12 +12,21 @@ body {
     background-position: center;
     color: #333;
     text-align: center; /* Alineación de texto en el header y footer */
+    tex
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 10px 0;
+}
+
+#noticias {
+    background-color: #f0f0f0; /* Cambia el color de fondo */
+    padding: 2rem;            /* Añade espaciado interno */
+    border-radius: 5px;        /* Bordes redondeados */
+    margin-bottom: 20px;       /* Espaciado inferior */
+    text-align: left;
 }
 
 header h1 {
