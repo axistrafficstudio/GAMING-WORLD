@@ -145,6 +145,26 @@ aside {
     gap: 2rem;
 }
 
+#gallery2 {
+    background-color: rgb(41, 129, 206);
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 2rem;
+}
+
+#gallery3 {
+    background-color: rgb(41, 129, 206);
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 2rem;
+}
+
 #gallery .gallery-cont {
     display: grid;
     grid-template-columns: auto auto auto;
