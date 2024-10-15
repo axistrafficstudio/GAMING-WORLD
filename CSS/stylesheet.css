@@ -12,13 +12,37 @@ body {
     background-position: center;
     color: #333;
     text-align: center; /* Alineación de texto en el header y footer */
-    tex
 }
 
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 4px 0;
+}
+
+
+header button{
+    width: 12rem;
+    padding: 1 rem 2 rem;
+    outline: none;
+    background-color: rgb(124, 124, 197);
+    border: none;
+    color: blanchedalmond;
+    font-weight: bold;
+
+    /*La propiedad transition siempre debe encontrarse en el estado inicial*/
+
+    transition: all;
+    transition: 0.5s;
+}
+
+header button:hover {
+cursor: pointer;
+color:blueviolet;
+background-color:aliceblue;
+
+transform: scale(1.15) rotate(10deg) translate(20px, 0);
+
 }
 
 #noticias {
@@ -30,8 +54,33 @@ header {
 }
 
 header h1 {
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
+
+nav .menu-flex{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+
+    }
+    
+    nav .menu-flex a{
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10% 20%;
+    transition: 0,30s;
+    flex-direction: row;
+    }
+    
+    nav .menu-flex a :hover{
+        color:blueviolet;
+        background-color: brown;
+    }
 
 nav ul {
     list-style: none;
@@ -83,3 +132,42 @@ aside {
     height: 2.5rem;            /* altura de pie de página */
     color: aquamarine;
   }
+
+  /*Gallery*/
+
+#gallery {
+    background-color: rgb(41, 129, 206);
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 2rem;
+}
+
+#gallery .gallery-cont {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#gallery .gallery-img {
+    object-fit: cover;
+    height: 100%;
+    max-width: 200px;
+}
+
+/*ANIMATIONS*/
+
+@keyframes animateTitle {
+
+    from{
+        color:aqua
+
+    }
+
+    to{
+        color: red
+    }
+
+    
+}
