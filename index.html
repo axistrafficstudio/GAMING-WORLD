@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revista de Videojuegos</title>
-    <link rel="stylesheet" href="/CSS/stylesheet.css">
+    <link rel="stylesheet" href="/css/stylesheet.css">
 
 </head>
+
 <body>
-    <section #seccion_titulo>
-        <header class="Header_titulo">
+    <section id="seccion-titulo">
+        <header class="header_titulo">
             <nav>
                 <ul>
                     <h1>Bienvenido a Gaming World</h1>
@@ -17,7 +18,8 @@
             </nav>
         </header>
     </section>
-     <section #seccion_menu>
+
+     <section id="seccion-menu">
         <header class="header_menu">
             <nav>
                 <ul>
@@ -31,18 +33,50 @@
     </section>
 
     <main>
-        <section id="noticias">
-            <h2>Últimas Noticias</h2>
-            <article>
-                <h3>Nuevo juego sorprende en la E3</h3>
-                <p>Un vistazo a los nuevos lanzamientos que sorprendieron en la E3 2023.</p>
-            </article>
-            <article>
-                <h3>Actualización de juego popular</h3>
-                <p>Los desarrolladores han lanzado una nueva actualización que añade contenido emocionante.</p>
-            </article>
-        </section>
-
+        <div id="main-content">
+            <section id="noticias">
+                <h2>Últimas Noticias</h2>
+                <article>
+                    <h3>Nuevo juego sorprende en la E3</h3>
+                    <p>Un vistazo a los nuevos lanzamientos que sorprendieron en la E3 2023.</p>
+                </article>
+                <article>
+                    <h3>Actualización de juego popular</h3>
+                    <p>Los desarrolladores han lanzado una nueva actualización que añade contenido emocionante.</p>
+                </article>
+            </section>
+    
+            <section id="articulos">
+                <h2>Artículos Recientes</h2>
+                <div class="articulo-item">
+                    <img src="/images/spacemarine2.jpg" alt="Space Marine 2 Skins" class="articulo-img">
+                    <div class="articulo-contenido">
+                        <h3><a href="#">Novedades en Warhammer 40.000: Space Marine 2</a></h3>
+                        <p>Nuevos cosméticos, nuevas armas, operaciones y mucho más.</p>
+                        <p><em>21/10/2024</em></p>
+                    </div>
+                </div>
+            
+                <div class="articulo-item">
+                    <img src="/images/gamefreak.png" alt="Game Freak Logo" class="articulo-img">
+                    <div class="articulo-contenido">
+                        <h3><a href="#">Game Freak en apuros</a></h3>
+                        <p>Se hace público más de 1TB de información de sus proyectos tras un ataque cibernético masivo.</p>
+                        <p><em>20/10/2024</em></p>
+                    </div>
+                </div>
+            
+                <div class="articulo-item">
+                    <img src="/images/arcane2.jpeg" alt="Arcane 2 Imagen de Portada" class="articulo-img">
+                    <div class="articulo-contenido">
+                        <h3><a href="#">Arcane 2: Nuevo Tráiler de Lanzamiento</a></h3>
+                        <p>A menos de dos semanas para el lanzamiento de su segunda temporada, tenemos nuevo tráiler que abre muchas incógnitas.</p>
+                        <p><em>19/10/2024</em></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+               
         <aside>
             <h2>Artículos Destacados</h2>
             <ul>

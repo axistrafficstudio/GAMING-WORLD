@@ -23,7 +23,7 @@ body {
 
 #seccion_menu{
     background-color: black;
-    padding: 30%;
+    padding: 20%;
     display: flex;
     justify-content: center;
 }
@@ -41,12 +41,38 @@ body {
 }
 
 
-#noticias {
-    background-color: #f0f0f0; /* Cambia el color de fondo */
-    padding: 2rem;            /* Añade espaciado interno */
-    border-radius: 5px;        /* Bordes redondeados */
-    margin-bottom: 20px;       /* Espaciado inferior */
+main {
+    display: flex;
+    padding: 20px;
+    justify-content: center; /* Alinea los elementos hijos en el centro */
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column; /* Aplica columna solo a noticias y artículos */
+    flex: 3; /* Toma la mayor parte del espacio */
+    margin-right: 20px; /* Deja espacio entre esta sección y el aside */
+}
+
+section {
+    flex: 3;
+    margin-right: 20px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+aside {
+    flex: 1; /* Mantén el aside en la derecha */
+    background: #e4e4e4;
+    padding: 20px;
+    border-radius: 5px;
     text-align: left;
+}
+
+#noticias, #articulos {
+    background-color: #f0f0f0; /* Cambia el color de fondo */
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 header h1 {
@@ -67,25 +93,58 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    display: flex;
-    padding: 20px;
-    justify-content: center; /* Alinea los elementos hijos en el centro */
-}
-
-section {
-    flex: 3;
-    margin-right: 20px;
-    text-align: left; /* Alinea el texto a la izquierda */
-}
-
-aside {
-    flex: 1;
-    background: #e4e4e4;
-    padding: 20px;
+/* Estilos para la sección de artículos */
+#articulos {
+    background-color: #f9f9f9;
+    padding: 2rem;
     border-radius: 5px;
-    text-align: left; /* Alinea el texto a la izquierda */
+    margin-top: 20px;
 }
+
+#articulos h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.articulo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 5px solid #e2e2e2;
+    padding-bottom: 1rem;
+}
+
+.articulo-img {
+    width: 45%;
+    height: 100%;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.articulo-contenido {
+    text-align: left;
+}
+
+.articulo-contenido h3 {
+    margin: 0;
+}
+
+.articulo-contenido h3 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.articulo-contenido h3 a:hover {
+    text-decoration: underline;
+}
+
+.articulo-contenido p {
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Fin sección artículos */
 
 #page-container {
     position: relative;
