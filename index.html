@@ -5,99 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revista de Videojuegos</title>
     <link rel="stylesheet" href="/css/stylesheet.css">
-
 </head>
+
 <body>
-    <header>
-        <h1>Revista de Videojuegos</h1>
-        <nav>
-            <ul>
-               <li class="menu-flex">
-                    <a href="#">HOME</a>
-                    <a href="#">NEWS</a>
-                    <a href="#">CONTACT</a>
-                    <a href="#">PHOTOS</a>
-               </li>
-            </ul>
-        </nav>
-        <button>CALL TO ACTION</button>
-    </header>
+    <section id="seccion-titulo">
+        <header class="header_titulo">
+            <h1>Bienvenido a Gaming World</h1>
+        </header>
+    </section>
+
+    <section id="seccion-menu">
+        <header class="header_menu">
+            <nav>
+                <ul>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#articulos">Artículos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
 
     <main>
-        <section id="noticias">
-            <h2>Últimas Noticias</h2>
-            <article>
-                <h3>Nuevo juego sorprende en la E3</h3>
-                <p>Un vistazo a los nuevos lanzamientos que sorprendieron en la E3 2023.</p>
-            </article>
-            <article>
-                <h3>Actualización de juego popular</h3>
-                <p>Los desarrolladores han lanzado una nueva actualización que añade contenido emocionante.</p>
-            </article>
-        </section>
-        <button>CALL TO ACTION</button>
+        <div id="main-content">
+            <section id="noticias">
+                <h2>Últimas Noticias</h2>
+                <article>
+                    <h3>Nuevo juego sorprende en la E3</h3>
+                    <p>Un vistazo a los nuevos lanzamientos que sorprendieron en la E3 2023.</p>
+                </article>
+                <article>
+                    <h3>Actualización de juego popular</h3>
+                    <p>Los desarrolladores han lanzado una nueva actualización que añade contenido emocionante.</p>
+                </article>
+            </section>
+    
+            <section id="articulos">
+                <h2>Artículos Recientes</h2>
+                <div class="articulo-item">
+                    <img src="/images/spacemarine2.jpg" alt="Space Marine 2 Skins" class="articulo-img">
+                    <div class="articulo-contenido">
+                        <h3><a href="#">Novedades en Warhammer 40.000: Space Marine 2</a></h3>
+                        <p>Nuevos cosméticos, nuevas armas, operaciones y mucho más.</p>
+                        <p><em>21/10/2024</em></p>
+                    </div>
+                </div>
+            
+                <div class="articulo-item">
+                    <img src="/images/gamefreak.png" alt="Game Freak Logo" class="articulo-img">
+                    <div class="articulo-contenido">
+                        <h3><a href="#">Game Freak en apuros</a></h3>
+                        <p>Se hace público más de 1TB de información de sus proyectos tras un ataque cibernético masivo.</p>
+                        <p><em>20/10/2024</em></p>
+                    </div>
+                </div>
+            
+                <div class="articulo-item">
+                    <img src="/images/arcane2.jpeg" alt="Arcane 2 Imagen de Portada" class="articulo-img">
+                    <div class="articulo-contenido">
+                        <h3><a href="#">Arcane 2: Nuevo Tráiler de Lanzamiento</a></h3>
+                        <p>A menos de dos semanas para el lanzamiento de su segunda temporada, tenemos nuevo tráiler que abre muchas incógnitas.</p>
+                        <p><em>19/10/2024</em></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
         <aside>
             <h2>Artículos Destacados</h2>
             <ul>
                 <li><a href="#">10 Consejos para Mejorar en tu Juego Favorito</a></li>
-                <button>CALL TO ACTION</button>
                 <li><a href="#">La Evolución de los Videojuegos</a></li>
-                <button>CALL TO ACTION</button>
                 <li><a href="#">Los Mejores Juegos de 2023</a></li>
-                <button>CALL TO ACTION</button>
                 <li><a href="#">¿Quieres aprender a programar C++?</a></li>
-                <button>CALL TO ACTION</button>
             </ul>
         </aside>
-        <div><section id="gallery">
-            <h1>GALLERY1<h2>
-            <div class="gallery-cont">
-            <img src="https://picsum.photos/200/300" alt="">
-            <img src="https://picsum.photos/200" alt="">
-            <img src="https://picsum.photos/id/237/200/300" alt="">
-            <img src="https://picsum.photos/seed/picsum/200/300" alt="">
-            <img src="https://picsum.photos/200/300?grayscale" alt="">
-            <img src="https://picsum.photos/200/300/?blur" alt="">
-            <img src="https://picsum.photos/200/300" alt="">
-            <img src="https://picsum.photos/200" alt="">
-            <img src="https://picsum.photos/id/237/200/300" alt="">
-            <img src="https://picsum.photos/seed/picsum/200/300" alt="">
-            <img src="https://picsum.photos/200/300?grayscale" alt="">
-            <img src="https://picsum.photos/200/300/?blur" alt="">
-            <div>
+
+        <div>
+            <section id="gallery">
+                <h1>GALLERY1</h1>
+                <div class="gallery-cont">
+                    <img src="https://picsum.photos/200/300" alt="">
+                    <img src="https://picsum.photos/200" alt="">
+                    <img src="https://picsum.photos/id/237/200/300" alt="">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <img src="https://picsum.photos/200/300?grayscale" alt="">
+                    <img src="https://picsum.photos/200/300/?blur" alt="">
+                </div>
+            </section>
+        </div>
+
+        <div>
+            <section id="gallery2">
+                <h1>GALLERY2</h1>
+                <div class="gallery-cont">
+                    <img src="https://picsum.photos/200/300" alt="">
+                    <img src="https://picsum.photos/200" alt="">
+                </div>
+            </section>
+        </div>
+
+        <div>
+            <section id="gallery3">
+                <h1>GALLERY3</h1>
+                <div class="gallery-cont">
+                    <img src="https://picsum.photos/200/300" alt="">
+                    <img src="https://picsum.photos/200" alt="">
+                    <img src="https://picsum.photos/id/237/200/300" alt="">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                </div>
             </section>
         </div>
     </main>
 
-    <div>
-        <section id="gallery2">
-        <h1>gallery2<h2>
-        <div class="gallery-cont">
-        <img src="https://picsum.photos/200/300" alt="">
-        <img src="https://picsum.photos/200" alt="">
-        <div>
-        </section>
-    </div>
-
-    <div>
-        <section id="gallery3">
-        <h1>GALLERY3<h2>
-        <div class="gallery-cont">
-        <img src="https://picsum.photos/200/300" alt="">
-        <img src="https://picsum.photos/200" alt="">
-        <img src="https://picsum.photos/id/237/200/300" alt="">
-        <img src="https://picsum.photos/seed/picsum/200/300" alt="">
-        <div>
-        </section>
-    </div>
-
     <div id="page-container">
         <div id="content-wrap">
-          <!-- todo el contenido de pagina -->
+            <!-- todo el contenido de pagina -->
         </div>
         <footer id="footer">
             <p>&copy; 2024 Revista de Videojuegos. Todos los derechos reservados a Ricardo y Álvaro.</p>
         </footer>
-      </div>
+    </div>
 </body>
 </html>
+

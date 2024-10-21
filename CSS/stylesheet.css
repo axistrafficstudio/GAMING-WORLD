@@ -14,73 +14,105 @@ body {
     text-align: center; /* Alineación de texto en el header y footer */
 }
 
+#seccion_titulo {
+    background-color: #333;
+    padding: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#seccion_menu {
+    background-color: black;
+    padding: 20%;
+    display: flex;
+    justify-content: center;
+}
+
 header {
     background: #333;
     color: #fff;
     padding: 4px 0;
 }
 
-
-header button{
+header button {
     width: 12rem;
-    padding: 1 rem 2 rem;
+    padding: 1rem 2rem;
     outline: none;
     background-color: rgb(124, 124, 197);
     border: none;
     color: blanchedalmond;
     font-weight: bold;
-
-    /*La propiedad transition siempre debe encontrarse en el estado inicial*/
-
-    transition: all;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 header button:hover {
-cursor: pointer;
-color:blueviolet;
-background-color:aliceblue;
-
-transform: scale(1.15) rotate(10deg) translate(20px, 0);
-
+    cursor: pointer;
+    color: blueviolet;
+    background-color: aliceblue;
+    transform: scale(1.15) rotate(10deg) translate(20px, 0);
 }
 
-#noticias {
-    background-color: #f0f0f0; /* Cambia el color de fondo */
-    padding: 2rem;            /* Añade espaciado interno */
-    border-radius: 5px;        /* Bordes redondeados */
-    margin-bottom: 20px;       /* Espaciado inferior */
+main {
+    display: flex;
+    padding: 20px;
+    justify-content: center; /* Alinea los elementos hijos en el centro */
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column; /* Aplica columna solo a noticias y artículos */
+    flex: 3; /* Toma la mayor parte del espacio */
+    margin-right: 20px; /* Deja espacio entre esta sección y el aside */
+}
+
+section {
+    flex: 3;
+    margin-right: 20px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+aside {
+    flex: 1; /* Mantén el aside en la derecha */
+    background: #e4e4e4;
+    padding: 20px;
+    border-radius: 5px;
     text-align: left;
+}
+
+#noticias, #articulos {
+    background-color: #f0f0f0; /* Cambia el color de fondo */
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 header h1 {
     margin-bottom: 3px;
 }
 
-nav .menu-flex{
+nav .menu-flex {
     list-style: none;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #f0f0f0;
+}
 
-    }
-    
-    nav .menu-flex a{
+nav .menu-flex a {
     color: aliceblue;
     font-weight: bold;
     text-decoration: none;
     padding: 10% 20%;
-    transition: 0,30s;
+    transition: 0.3s;
     flex-direction: row;
-    }
-    
-    nav .menu-flex a :hover{
-        color:blueviolet;
-        background-color: brown;
-    }
+}
+
+nav .menu-flex a:hover {
+    color: blueviolet;
+    background-color: brown;
+}
 
 nav ul {
     list-style: none;
@@ -96,98 +128,110 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    display: flex;
-    padding: 20px;
-    justify-content: center; /* Alinea los elementos hijos en el centro */
-}
-
-section {
-    flex: 3;
-    margin-right: 20px;
-    text-align: left; /* Alinea el texto a la izquierda */
-}
-
-aside {
-    flex: 1;
-    background: #e4e4e4;
-    padding: 20px;
+/* Estilos para la sección de artículos */
+#articulos {
+    background-color: #f9f9f9;
+    padding: 2rem;
     border-radius: 5px;
-    text-align: left; /* Alinea el texto a la izquierda */
+    margin-top: 20px;
 }
+
+#articulos h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.articulo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 5px solid #e2e2e2;
+    padding-bottom: 1rem;
+}
+
+.articulo-img {
+    width: 45%;
+    height: 100%;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.articulo-contenido {
+    text-align: left;
+}
+
+.articulo-contenido h3 {
+    margin: 0;
+}
+
+.articulo-contenido h3 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.articulo-contenido h3 a:hover {
+    text-decoration: underline;
+}
+
+.articulo-contenido p {
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Fin sección artículos */
 
 #page-container {
     position: relative;
     min-height: 100vh;
-  }
-  
-  #content-wrap {
+}
+
+#content-wrap {
     padding-bottom: 2.5rem;    /* altura de pie de página */
-  }
-  
-  #footer {
+}
+
+#footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;            /* altura de pie de página */
     color: aquamarine;
-  }
+}
 
-  /*Gallery*/
+/* Gallery */
 
-#gallery {
+#gallery, #gallery2, #gallery3 {
     background-color: rgb(41, 129, 206);
     padding: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     gap: 2rem;
 }
 
-#gallery2 {
-    background-color: rgb(41, 129, 206);
-    padding: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    gap: 2rem;
-}
-
-#gallery3 {
-    background-color: rgb(41, 129, 206);
-    padding: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    gap: 2rem;
-}
-
-#gallery .gallery-cont {
+#gallery .gallery-cont,
+#gallery2 .gallery-cont,
+#gallery3 .gallery-cont {
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
-#gallery .gallery-img {
+#gallery .gallery-img,
+#gallery2 .gallery-img,
+#gallery3 .gallery-img {
     object-fit: cover;
     height: 100%;
     max-width: 200px;
 }
 
-/*ANIMATIONS*/
+/* ANIMATIONS */
 
 @keyframes animateTitle {
-
-    from{
-        color:aqua
-
+    from {
+        color: aqua;
     }
-
-    to{
-        color: red
+    to {
+        color: red;
     }
-
-    
 }
