@@ -12,14 +12,34 @@ body {
     background-position: center;
     color: #333;
     text-align: center; /* Alineación de texto en el header y footer */
-    tex
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+#seccion_titulo{
+    background-color: #333;
+    padding: 30%;
+    display: flex;
+    justify-content: center;
 }
+
+#seccion_menu{
+    background-color: black;
+    padding: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#header_titulo{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#header_menu{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
 
 #noticias {
     background-color: #f0f0f0; /* Cambia el color de fondo */
